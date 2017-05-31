@@ -23,6 +23,8 @@ header img{max-height:100%;max-width:100%;}
 .feature .content h1,
 .feature .content h2{color:#fff;}
 .feature .content p{color:#999;}
+.feature a {text-decoration: none;color: #7289DA;transition: all 0.2s ease;}
+.feature a:hover {text-decoration: none;color: #8ca1eb;transition: all 0.2s ease;}
 .feature img.icon{border-radius:50%;border:5px solid rgba(255,255,255,0.5);background:rgba(255,255,255,0.25);width:100px;height:100px;}
 .feature:nth-child(even){background:#303030;}
 .feature:nth-child(even) img.icon{float:right;}
