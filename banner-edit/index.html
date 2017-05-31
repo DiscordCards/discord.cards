@@ -1,0 +1,130 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="Content-Language" content="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+		<!-- Other Meta tags -->
+
+		<!-- <meta name="google-site-verification" content="" /> -->
+
+		<meta name="author" content="Snazzah">
+		<meta content="Discord Cards - A Discord Trading Card Bot" property="og:description">
+		<meta content="Discord Cards - Banner Editor" property="og:title">
+		<meta content="https://discord.cards/i/metaicon.png" property="og:image">
+		<meta content="image/png" property="og:image:type">
+		<meta content="150" property="og:image:width">
+		<meta content="150" property="og:image:heigth">
+		<meta content="https://discord.cards/banner-edit" property="og:url">
+		<meta content="Discord Cards" property="og:site_name">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="https://discord.cards/banner-edit">
+		<meta name="twitter:title" content="Discord Cards - Banner Editor">
+		<meta name="twitter:description" content="Discord Cards -A Discord Trading Card Bot">
+		<meta name="twitter:image" content="https://discord.cards/i/metaicon.png">
+		<meta name="twitter:image:type" content="image/png">
+		<meta name="twitter:image:width" content="150">
+		<meta name="twitter:image:height" content="150">
+		<meta name="twitter:creator" content="@SnazzahGuy">
+		<meta name="twitter:site" content="@SnazzahGuy">
+
+		<meta name="description" content="Discord Cards - A Discord Trading Card Bot">
+		<meta name="title" content="Discord Cards - Banner Editor">
+
+		<meta name="subject" content="A Discord Trading Card Bot">
+		<meta name="copyright" content="Discord Cards">
+		<meta name="owner" content="Snazzah">
+		<meta name="revised" content="Tuesday, August 9th, 2016, 10:30 am">
+		<meta name="rating" content="General">
+
+
+		<link rel="fluid-icon" type="image/png" href="https://discord.cards/i/metaicon.png" />
+		<link rel="canonical" href="https://discord.cards/banner-edit/index.html" />
+
+
+		<link rel="apple-touch-icon-precomposed" href="https://discord.cards/i/metaicon.png"/>
+		<link rel="apple-touch-icon" href="https://discord.cards/i/metaicon.png"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- IE Meta -->
+
+		<meta name="msapplication-starturl" content="https://discord.cards/banner-edit">
+		<meta name="application-name" content="Discord Cards">
+		<meta name="msapplication-tooltip" content="Go to Discord Cards">
+
+
+
+		<link rel="icon" type="image/png" class="" href="https://discord.cards/i/metaicon.png" />
+		<link href="../css/main.min.css" type="text/css" rel="stylesheet">
+		<script async src="../js/tooltip.js"></script>
+		<link href="module.min.css" type="text/css" rel="stylesheet">
+		<title>Discord Cards - Banner Editor</title>
+	</head>
+	<body>
+		<header>
+            <a class="img" href="https://discord.cards"><img src="../i/banner.png" draggable="false"></a>
+			<a class="left" href="https://join.discord.cards">Discord Server</a>
+			<a class="right" href="https://invite.discord.cards">Invite</a>
+		</header>
+		<div class="table">
+			<div class="preview dark">
+				<div class="par">
+					<div class="abs">
+						<div id="base" style="background-color: #7289DA;">
+						<img id="overlay" src="https://res.discorddungeons.me/images/cbannerbase/inverted_overlay.png" draggable="false"></div>
+						<div id="design" style="background-color: white;"></div>
+						<img id="stick" src="https://res.discorddungeons.me/images/cbannerbase/_stick.png" draggable="false">
+					</div>
+				</div>
+				<p>Copy this command to automatically set the banner to the one shown.</p>
+				<input id="output" value="[]ccode Club Awesome | aW52ZXJ0ZWR8NGd2eXl8ZGlzY29yZHw5emxkcg==" onchange="Banner.generate()">
+			</div>
+			<div class="settings">
+				<h1>Base Type</h1><br>
+		        <select id="baseName" onchange="Banner.generate()">
+		          <option value="none">Select a Base Type</option>
+		          <option value="default">Default</option>
+		          <option value="spiked">Spiked</option>
+		          <option value="inverted" selected="selected">Inverted</option>
+		        </select><br>
+				<h1>Base Color</h1><br>
+				<input id="baseColor" class="jscolor" value="7289da" onchange="Banner.generate()">
+				<h1>Design</h1><br>
+		        <select id="designName" onchange="Banner.generate()">
+		          <option value="none">Select a Design</option>
+		          <option value="nitro">Nitro</option>
+		          <option value="discord" selected="selected">Discord</option>
+		          <option value="dbots">Dbots</option>
+		          <option value="dcards">Dcards</option>
+		          <option value="dcardsinverted">Dcardsinverted</option>
+		        </select><br>
+				<h1>Design Color</h1><br>
+				<input id="designColor" class="jscolor" value="ffffff" onchange="Banner.generate()">
+				<h1>Club Name</h1><br>
+				<input id="clubName" value="Club Awesome" onchange="Banner.generate()">
+			</div>
+		</div>
+		<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewbox="0 0 250 250">
+			<mask id="mymask">
+				<image id="img" xlink:href="https://res.discorddungeons.me/images/bannerdesign/discord.png" x="0" y="0" height="250px" width="250px" />
+			</mask>
+		</svg>
+		<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewbox="0 0 400 400">
+			<mask id="mymask2">
+				<image id="img2" xlink:href="https://res.discorddungeons.me/images/cbannerbase/inverted.png" x="0" y="0" height="400px" width="400px" />
+			</mask>
+		</svg>
+		<footer>
+			Made by <a href="https://twitter.com/SnazzahGuy">Snazzah</a> Discord Cards © <a href="https://twitter.com/SnazzahGuy">Snazzah</a> - Uses <a href="https://jscolor.com/">JSColor</a>
+		</footer>
+		<script src="jscolor.min.js"></script>
+		<script src="module.js"></script>
+	</body>
+</html>

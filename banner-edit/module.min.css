@@ -1,0 +1,40 @@
+.table{display:table;width:100%;height:100%;}
+header{text-align:center;background:url(../i/bg.png) #7289da;width:100%;height:100px;position:fixed;top:0;border-bottom:3px solid #556fcd;z-index:2000;}
+.settings, .preview{display:table-cell;vertical-align:middle;text-align:center;width:50%;}
+.settings{background:#888;}
+.settings h1:nth-child(1){margin-top:0;}
+.settings input:not(.jscolor){margin-bottom:10px;}
+.preview{background:#fff;transition:all 0.2s ease;}
+.preview.dark{background:#000;}
+select{padding:5px 100px 5px 10px;font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:20px;color:#777;border:0;outline:0;-webkit-app-region:no-drag;}
+option{padding:5px 10px;outline:0;color:#000;-webkit-app-region:no-drag;}
+svg{display:none;}
+h1{margin-bottom:0;}
+input{padding:5px 100px 5px 10px;font:14px/1.5 Whitney, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:20px;color:#000;border:0;outline:0;-webkit-app-region:no-drag;}
+input#output{width:80%;padding:5px 10px 5px 10px;transform:translateY(-50px);transition:all 0.2s ease;}
+.preview:not(.dark) input#output{background-color:#999;transition:all 0.2s ease;}
+.preview p{width:80%;margin:0 8.6%;padding:5px 10px 5px 10px;transform:translateY(-50px);background-color:#7289da;color:#fff;}
+input.jscolor{background-image:url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_colorize_white_24px.svg) !important;background-size:contain !important;position:relative !important;background-repeat:no-repeat;background-position-x:100%;transition:all 0.2s ease;}
+input.jscolor[style*=" color: rgb(0,"]{background-image:url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_colorize_black_24px.svg) !important;}
+.preview .abs div{position:absolute;top:calc(50% - 200px);left:calc(50% - 200px);}
+.preview .abs #base{z-index:1;width:400px;height:400px;mask:url(#mymask2);-webkit-mask-box-image:url(http://res.discorddungeons.me/images/cbannerbase/inverted.png);transition:all 0.2s ease;}
+.preview .abs #overlay{z-index:2;}
+.preview .abs #design{z-index:3;top:calc((50% - 125px) - 40px);left:calc(50% - 125px);width:250px;height:250px;mask:url(#mymask);-webkit-mask-box-image:url(http://res.discorddungeons.me/images/bannerdesign/discord.png);transition:all 0.2s ease;}
+.preview .abs #stick{z-index:900;}
+.preview div.par{display:table;height:100%;width:100%;}
+.preview div.abs{display:table-cell;vertical-align:middle;text-align:center;position:relative;height:400px;width:400px;padding:50px 0px;margin-left:25%;margin-right:25%;}
+div[style*="clear"]{animation:tooltip-anim 200ms ease-in-out;-webkit-animation:tooltip-anim 200ms ease-in-out;-o-animation:tooltip-anim 200ms ease-in-out;-moz-animation:tooltip-anim 200ms ease-in-out;}
+div[style*="clear"] div[style*="relative"]{border-radius:0px !important;border:none !important;}
+div[style*="clear"] div[style*="box-shadow"]{border-radius:0px !important;box-shadow:none !important;}
+@keyframes jscolor-anim{from{transform:translateY(-30px);opacity:0;}
+100%{opacity:1;}
+}
+@-webkit-keyframes jscolor-anim{from{transform:translateY(-30px);opacity:0;}
+100%{opacity:1;}
+}
+@-o-keyframes jscolor-anim{from{transform:translateY(-30px);opacity:0;}
+100%{opacity:1;}
+}
+@-moz-keyframes jscolor-anim{from{transform:translateY(-30px);opacity:0;}
+100%{opacity:1;}
+}
