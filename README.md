@@ -1,4 +1,4 @@
-# ![icon](https://discord.cards/i/metaicon.png) `discord.cards`
+# ![icon](https://discord.cards/i/metaicon.png) [`discord.cards`](https://discord.cards/)
 The website source.
 
 
