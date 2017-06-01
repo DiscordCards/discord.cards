@@ -235,7 +235,7 @@ chatbox {
 /* Links */
 
 .links {
-	background: #ddd;
+	background: #eee;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
@@ -247,6 +247,10 @@ chatbox {
 	font-weight: bold;
 	font-size: 25px;
 	color: #333;
+}
+
+.links a:nth-child(even) {
+	background: #ddd;
 }
 
 .links a.mobile-only {
@@ -283,6 +287,10 @@ chatbox {
 
 .links a.dzone:after {
 	content: url(/i/link-icons/dzone.png);
+}
+
+.links a.dborg:after {
+	content: url(/i/link-icons/dborg.png);
 }
 
 /* Links */
